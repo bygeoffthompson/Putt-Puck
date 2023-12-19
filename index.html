@@ -24,13 +24,10 @@
   .bg-image{background-position:center;background-repeat:no-repeat;background-size:cover;}
 </style>
 
-<div class="bg-image container-fluid" style="background-image:url('img/ice.png');">
+<div class="container-xl" id="home">
   <h1 class="fst-italic p-3 text-center">Putt Puck</h1>
-</div>
-
-<div class="container-xl">
-  <h2 class="text-center">A golf ballternative designed for putting practice on hard surfaces.</h2>
-  <p class="text-center">Putt Puck slides over smooth surfaces and opens up new areas of the house to practice:</p>
+  <h2 class="text-center">A golf ball alternative designed to practice putting on smooth surfaces.</h2>
+  <p class="text-center">Putt Puck slides over hard surfaces and opens up new areas of the house to practice:</p>
   <div class="row text-center">
     <div class="bg-image col-12 col-md-6 col-lg-4 p-4" style="background-image:url('img/bamboo.jpg');">
       <div class="d-inline px-2 py-3" style="background-image:radial-gradient(#e2b379 50%, transparent 75%);">
@@ -41,7 +38,7 @@
       </div>
     </div>
     <div class="bg-image col-12 col-md-6 col-lg-4 p-4" style="background-image:url('img/hardwood.jpg');">
-      <div class="d-inline px-2 py-3" style="background-image:radial-gradient(#9c5e3c 50%, transparent 75%);">
+      <div class="d-inline px-2 py-3" style="background-image:radial-gradient(#cc9463 50%, transparent 75%);">
         <strong>Hardwood</strong>
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#0f0" class="bi bi-check" viewBox="0 0 16 16">
           <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
@@ -81,7 +78,7 @@
       </div>
     </div>
     <div class="bg-image col-12 p-4" style="background-image:url('img/concrete.jpg');">
-      <div class="d-inline px-2 py-3" style="background-image:radial-gradient(#737577 50%, transparent 75%);">
+      <div class="d-inline px-2 py-3 text-light" style="background-image:radial-gradient(#737577 50%, transparent 75%);">
         <strong>and more!</strong>
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#0f0" class="bi bi-check" viewBox="0 0 16 16">
           <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
@@ -91,28 +88,46 @@
   </div>
 </div>
 
-<div class="container">
+<div class="container" id="faqs">
   <h3 class="text-center">FAQs</h3>
-  <div class="accordion" id="accordionFlushExample">
+  <div class="accordion" id="accordions">
     <div class="accordion-item">
-      <div class="accordion-header" id="flush-headingOne">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-          Does Putt Puck Scratch Surfaces?
+      <div class="accordion-header" id="heading1">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+          How Does Putt Puck Work?
         </button>
       </div>
-      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordions">
         <div class="accordion-body">
-          <p><strong>No!</strong> Putt Puck is made of a smooth, medium density plastic that will not damage your surface(s).</p>
+          <p>Putt Puck slides across a variety of surfaces with a slick and smooth plastic lower layer.</p>
+          <p>A low center of gravity prevents Putt Puck from toppling over. This allows golfers to strike their putts as they normally would on the course.</p>
+          <p>Putt Puck weighs 33% less (31g) than a regulation golf ball (46g). This allows it to effortlessly slide for long distances.</p>
         </div>
       </div>
     </div>
-  </div>
-</div>
-
-<div class="bg-danger fixed-bottom">
-  <div class="container">
-    <div class="row">
-      <a class="d-block py-3 text-center text-light w-100" href="https://ebay.com" target="_blank">eBay (Coming Soon)</a>
+    <div class="accordion-item">
+      <div class="accordion-header" id="heading2">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+          Will Putt Puck Scratch Surfaces?
+        </button>
+      </div>
+      <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordions">
+        <div class="accordion-body">
+          <p><strong>No!</strong> Putt Puck is made of a smooth, medium density plastic that will not damage surfaces.</p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-header" id="heading3">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+          Where Can I Buy Putt Puck?
+        </button>
+      </div>
+      <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordions">
+        <div class="accordion-body">
+          <p>Putt Puck is not for sale anywhere currently. It is expected to be available for purchase on eBay in early 2024.</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
