@@ -23,19 +23,26 @@
 <style>
   svg{bottom:2px;height:32px;position:relative;width:32px;}
   .bg-image{background-position:center;background-repeat:no-repeat;background-size:cover;}
+  .putt-puck{bottom:0;left:1rem;}
+  .ball{background-color:#000;border-radius:50%;height:28px;left:-2px;top:8px;width:28px;}
+  .puck{background-color:#000;height:10px;width:24px;}
 </style>
 
-<div class="container-xl" id="home">
+<div class="container-xl mb-4" id="home">
   <h1 class="fst-italic p-3 text-center">Putt Puck</h1>
   <h2 class="text-center">A golf ball option to practice putting on smooth hard surfaces.</h2>
   <p class="text-center">Putt Puck slides over hard surfaces and opens up new areas of the house to practice:</p>
   <div class="row text-center">
-    <div class="bg-image col-12 col-md-6 col-lg-4 p-4" style="background-image:url('img/bamboo.jpg');">
+    <div class="bg-image col-12 col-md-6 col-lg-4 p-4 position-relative" style="background-image:url('img/bamboo.jpg');">
       <div class="d-inline px-4 py-3" style="background-image:radial-gradient(#e2b379 50%, transparent 75%);">
         <strong>Bamboo</strong>
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#0f0" class="bi bi-check" viewBox="0 0 16 16">
           <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
         </svg>
+        <div class="position-absolute putt-puck">
+          <div class="ball position-relative"></div>
+          <div class="puck"></div>
+        </div>
       </div>
     </div>
     <div class="bg-image col-12 col-md-6 col-lg-4 p-4" style="background-image:url('img/hardwood.jpg');">
