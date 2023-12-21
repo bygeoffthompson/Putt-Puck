@@ -21,12 +21,12 @@
     svg{bottom:2px;height:32px;position:relative;width:32px;}
     .bg-image{background-position:center;background-repeat:no-repeat;background-size:cover;}
     .card-img-top{max-height: 200px;}
-    .putt-puck{bottom:0;left:-30px;z-index:1;}
+    .putt-puck{bottom:0;left:-30px;transition-timing-function:cubic-bezier(0,.33,.66,1)!important;z-index:1;}
     .putt-puck.slide{left:calc(100vw + 30px);}
-    .putt-puck.four{transition:left 4s;transition-timing-function:cubic-bezier(0,0,.58,1);}
-    .putt-puck.five{transition:left 5s;transition-timing-function:cubic-bezier(0,0,.58,1);}
-    .putt-puck.six{transition:left 6s;transition-timing-function:cubic-bezier(0,0,.58,1);}
-    .putt-puck.seven{transition:left 7s;transition-timing-function:cubic-bezier(0,0,.58,1);}
+    .putt-puck.four{transition:left 4s;}
+    .putt-puck.five{transition:left 5s}
+    .putt-puck.six{transition:left 6s;}
+    .putt-puck.seven{transition:left 7s;}
     .ball{background-color:#fff;border-radius:50%;height:24px;left:-2px;top:10px;width:24px;}
     .ball:before{background-image:radial-gradient(#efefef 33%, transparent 66%);border-radius:50%;content:'';display:block;height:20px;left:1px;position:relative;top:2px;width:20px;}
     .puck{background-color:#fff;height:10px;width:20px;}
@@ -67,7 +67,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#0f0" class="bi bi-check" viewBox="0 0 16 16">
           <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
         </svg>
-        <div class="position-absolute putt-puck four">
+        <div class="position-absolute putt-puck six">
           <div class="ball position-relative shadow-lg"></div>
           <div class="puck shadow"></div>
         </div>
@@ -274,7 +274,7 @@
           </div>
           <div id="collapseBuy" class="accordion-collapse collapse" aria-labelledby="headingBuy" data-bs-parent="#accordions">
             <div class="accordion-body">
-              <p>Putt Puck is not for sale anywhere currently. It is expected to be available for purchase on eBay in early 2024.</p>
+              <p>Putt Puck is not yet for sale anywhere. It is expected to be available for purchase on eBay in early 2024.</p>
             </div>
           </div>
         </div>
