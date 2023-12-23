@@ -30,12 +30,14 @@
     .putt-puck.six{transition:left 6s;}
     .putt-puck.seven{transition:left 7s;}
     .ball{background-color:#fff;border-radius:50%;height:24px;left:-2px;overflow:hidden;top:10px;width:24px;}
-    .ball:after{content:'PuttPuck';display:block;font-size:4px;font-style:italic;position:relative;right:30px;top:3px;transform:rotate(-10deg);transition:right 3s ease;z-index:1;}
-    .ball:before{content:'PuttPuck';display:block;font-size:4px;font-style:italic;position:relative;right:45px;top:8px;transform:rotate(-10deg);transition:right 10s ease;z-index:1;}
+    .ball:after{content:'PuttPuck';display:block;font-size:4px;font-style:italic;position:relative;right:30px;top:3px;transform:rotate(-5deg);transition:right 1s linear;z-index:1;}
+    .ball:before{content:'PuttPuck';display:block;font-size:4px;font-style:italic;position:relative;right:60px;top:8px;transform:rotate(-5deg);transition:right 4s linear;z-index:1;}
     .puck{background-color:#fff;height:10px;width:20px;}
     .puck:before{background-image:radial-gradient(#efefef 33%, transparent 66%);border-radius:50%;bottom:12px;content:'';display:block;height:20px;position:relative;right:2px;width:20px;}
     .spin.ball:after{right:-30px;}
-    .spin.ball:before{right:-30px;}
+    .spin.ball:before{right:-60px;}
+    .spin.slow:after{transition:right 2s linear;}
+    .spin.slow:before{transition:right 8s linear;}
   </style>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script>
@@ -46,10 +48,10 @@
       $('.putt-puck.five').toggleClass('slide').find('.ball').toggleClass('spin');
     }, 5000);
     var puttPuck6 = window.setInterval(function(){
-      $('.putt-puck.six').toggleClass('slide').find('.ball').toggleClass('spin');
+      $('.putt-puck.six').toggleClass('slide').find('.ball').toggleClass('slow spin');
     }, 6000);
     var puttPuck7 = window.setInterval(function(){
-      $('.putt-puck.seven').toggleClass('slide').find('.ball').toggleClass('spin');
+      $('.putt-puck.seven').toggleClass('slide').find('.ball').toggleClass('slow spin');
     }, 7000);
   </script>
 </head>
