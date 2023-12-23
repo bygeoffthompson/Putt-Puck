@@ -30,10 +30,12 @@
     .putt-puck.six{transition:left 6s;}
     .putt-puck.seven{transition:left 7s;}
     .ball{background-color:#fff;border-radius:50%;height:24px;left:-2px;overflow:hidden;top:10px;width:24px;}
-    .ball:after{bottom:12px;content:'PuttPuck';display:block;font-size:4px;font-style:italic;position:relative;right:30px;transform:rotate(-10deg);transition:right 3.5s ease;}
-    .ball:before{background-image:radial-gradient(#efefef 33%, transparent 66%);border-radius:50%;content:'';display:block;height:20px;left:1px;position:relative;top:2px;width:20px;}
+    .ball:after{content:'PuttPuck';display:block;font-size:4px;font-style:italic;position:relative;right:30px;top:3px;transform:rotate(-10deg);transition:right 3s ease;z-index:1;}
+    .ball:before{content:'PuttPuck';display:block;font-size:4px;font-style:italic;position:relative;right:45px;top:8px;transform:rotate(-10deg);transition:right 10s ease;z-index:1;}
     .puck{background-color:#fff;height:10px;width:20px;}
+    .puck:before{background-image:radial-gradient(#efefef 33%, transparent 66%);border-radius:50%;bottom:12px;content:'';display:block;height:20px;position:relative;right:2px;width:20px;}
     .spin.ball:after{right:-30px;}
+    .spin.ball:before{right:-30px;}
   </style>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script>
@@ -136,13 +138,25 @@
         </div>
       </div>
     </div>
-    <div class="bg-image col-12 col-md-6 col-lg-4 p-4 position-relative" style="background-image:url('img/tile.jpg');">
+    <div class="bg-image col-12 col-md-6 col-lg-4 p-4 position-relative" style="background-image:url('img/granite.jpg');">
       <div class="d-inline px-4 py-3" style="background-image:radial-gradient(#a09b99 50%, transparent 75%);">
-        <strong>Stone</strong>
+        <strong>Granite</strong>
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#0f0" class="bi bi-check" viewBox="0 0 16 16">
           <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
         </svg>
-        <div class="position-absolute putt-puck six">
+        <div class="d-md-none position-absolute putt-puck seven">
+          <div class="ball position-relative shadow-lg"></div>
+          <div class="puck shadow"></div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-image col-12 col-md-6 col-lg-4 p-4 position-relative" style="background-image:url('img/marble.jpg');">
+      <div class="d-inline px-4 py-3" style="background-image:radial-gradient(#a09b99 50%, transparent 75%);">
+        <strong>Marble</strong>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#0f0" class="bi bi-check" viewBox="0 0 16 16">
+          <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+        </svg>
+        <div class="d-md-none position-absolute putt-puck six slide">
           <div class="ball position-relative shadow-lg"></div>
           <div class="puck shadow"></div>
         </div>
@@ -160,13 +174,25 @@
         </div>
       </div>
     </div>
-    <div class="bg-image col-12 col-lg-4 p-4 position-relative" style="background-image:url('img/concrete.jpg');">
+    <div class="bg-image col-12 col-md-6 p-4 position-relative" style="background-image:url('img/plastic.jpg');">
+      <div class="d-inline px-4 py-3" style="background-image:radial-gradient(#a09b99 50%, transparent 75%);">
+        <strong>Plastic</strong>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#0f0" class="bi bi-check" viewBox="0 0 16 16">
+          <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+        </svg>
+        <div class="d-md-none position-absolute putt-puck six slide">
+          <div class="ball position-relative shadow-lg"></div>
+          <div class="puck shadow"></div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-image col-12 col-md-6 p-4 position-relative" style="background-image:url('img/concrete.jpg');">
       <div class="d-inline px-4 py-3 text-light" style="background-image:radial-gradient(#737577 50%, transparent 75%);">
         <strong>and more!</strong>
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#0f0" class="bi bi-check" viewBox="0 0 16 16">
           <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
         </svg>
-        <div class="d-lg-none position-absolute putt-puck five slide">
+        <div class="d-lg-none position-absolute putt-puck five">
           <div class="ball position-relative shadow-lg"></div>
           <div class="puck shadow"></div>
         </div>
